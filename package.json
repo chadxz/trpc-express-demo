@@ -1,7 +1,7 @@
 {
   "name": "trpc-demo",
   "type": "module",
-  "packageManager": "yarn@4.0.1",
+  "packageManager": "yarn@4.1.1",
   "scripts": {
     "backend": "vite-node backend/index.ts",
     "frontend": "vite"
