@@ -1,4 +1,35 @@
 {
   "name": "trpc-demo",
-  "packageManager": "yarn@4.0.1"
+  "type": "module",
+  "packageManager": "yarn@4.0.1",
+  "scripts": {
+    "backend": "vite-node backend/index.ts",
+    "frontend": "vite"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.32.0",
+    "@tanstack/react-query-devtools": "^5.32.0",
+    "@trpc/client": "^11.0.0-rc.354",
+    "@trpc/react-query": "^11.0.0-rc.354",
+    "@trpc/server": "^11.0.0-rc.354",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "zod": "^3.23.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2",
+    "@types/express": "^4.17.21",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.6.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vite-node": "^1.5.2"
+  },
+  "imports": {
+    "#backend/*": "./backend/*",
+    "#frontend/*": "./frontend/*"
+  }
 }
