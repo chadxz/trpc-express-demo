@@ -12,10 +12,12 @@
 
 Check `backend/` for trpc-related stuff:
 * [backend/context.ts][] is the function you'd use to create the base request
-    context, see https://trpc.io/docs/server/context
-* [backend/server.ts][] is where the express server is built and the trpc
-    endpoint is registered.
-* [backend/trpc.ts][] is the app router, see https://trpc.io/docs/server/routers
+    context, see https://trpc.io/docs/server/context.
+* [backend/server.ts][] is where the express server and trpc app router are
+    built. See https://trpc.io/docs/server/routers.
+* [backend/trpc.ts][] is a simple helper library for exposing trpc components
+    this is where things like protected routes and middlware would also be
+    exposed maybe?
 
 On the `frontend/`, the recommended setup is defined using @tanstack/react-query.
 We could forgo this and instead use Zustand and the vanilla trpc client, or adopt
