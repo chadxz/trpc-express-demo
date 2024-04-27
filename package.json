@@ -3,7 +3,7 @@
   "type": "module",
   "packageManager": "yarn@4.1.1",
   "scripts": {
-    "backend": "vite-node backend/index.ts",
+    "backend": "tsx --no-warnings=ExperimentalWarning --watch backend/server.ts",
     "frontend": "vite"
   },
   "dependencies": {
@@ -24,9 +24,9 @@
     "@types/react": "^18.3.0",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react-swc": "^3.6.0",
+    "tsx": "^4.7.3",
     "typescript": "^5.4.5",
-    "vite": "^5.2.10",
-    "vite-node": "^1.5.2"
+    "vite": "^5.2.10"
   },
   "imports": {
     "#backend/*": "./backend/*",
